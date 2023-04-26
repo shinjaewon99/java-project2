@@ -2,12 +2,12 @@ package com.example.javaproject2.codeup;
 
 import java.util.Scanner;
 
-public class CodeUp1018 {
+public class CodeUp1041 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        String[] inputString = in.next().split(":");
+        char inputChar = in.next().charAt(0);
 
-        System.out.println(inputString[0] + ":" + inputString[1]);
+        System.out.println((char) (inputChar + 1));
     }
 }
