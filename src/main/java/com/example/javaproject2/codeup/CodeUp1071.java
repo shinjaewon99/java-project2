@@ -6,13 +6,11 @@ public class CodeUp1071 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        while(true){
-            int number = in.nextInt();
-
-            if(number == 0){
-                break;
-            }
+        int number;
+        do {
+            number = in.nextInt();
             System.out.println(number);
         }
+        while (number != 0);
     }
 }
