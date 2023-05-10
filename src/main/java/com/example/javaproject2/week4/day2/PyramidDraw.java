@@ -9,7 +9,7 @@ public class PyramidDraw extends ShapeDrawer{
 
 
     public static void main(String[] args) {
-        PyramidDraw pyramidDraw = new PyramidDraw();
+        ShapeDrawer pyramidDraw = new PyramidDraw();
         pyramidDraw.print(4);
     }
 
