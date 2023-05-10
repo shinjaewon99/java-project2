@@ -13,25 +13,23 @@ public class DrawDiamond {
 
     public void upStair(int number) {
         for (int i = 1; i <= number; i += 2) {
-            for (int j = 0; j < (number - i) / 2; j++) {
-                System.out.print(" ");
-            }
-            for (int j = 0; j < i; j++) {
-                System.out.print("*");
-            }
-            System.out.println();
+            makeALine(number, i);
         }
+    }
+
+    private void makeALine(int number, int i) {
+        for (int j = 0; j < (number - i) / 2; j++) {
+            System.out.print(" ");
+        }
+        for (int j = 0; j < i; j++) {
+            System.out.print("*");
+        }
+        System.out.println();
     }
 
     public void downStair(int number) {
         for (int i = number - 2; i >= 1; i -= 2) {
-            for (int j = 0; j < (number - i) / 2; j++) {
-                System.out.print(" ");
-            }
-            for (int j = 0; j < i; j++) {
-                System.out.print("*");
-            }
-            System.out.println();
+            makeALine(number, i);
         }
     }
 }
